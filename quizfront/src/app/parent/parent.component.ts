@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ProviderService} from '../shared/services/provider.service';
 
 @Component({
   selector: 'app-parent',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private provider: ProviderService
+  ) { }
 
   ngOnInit() {
   }
