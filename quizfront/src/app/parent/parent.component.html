@@ -1,3 +1,56 @@
-<p>
-  parent works!
-</p>
+<header>
+  <h1>ToDo LIST</h1>
+</header>
+<ng-container *ngIf="!logged">
+<div class="bodyall0">
+      <div>
+          <input type='text' [(ngModel)]="login" id="login">
+      </div>
+      <div>
+          <input type='text' [(ngModel)]="password" id="pw">
+      </div>
+      <div id="btn">
+          <button (click)="auth()">Log In</button>
+      </div>
+  </div>
+</ng-container>
+<ng-container *ngIf="logged">
+<content>
+
+  <div>
+      <input type="text" [(ngModel)]="title" >
+      <input type="text" [(ngModel)]="body" >
+      <input type="number" [(ngModel)]="like_count" >
+      <input type="date" [(ngModel)]="created_at" >
+      <button (click)="createPost()">Create</button>
+  </div>
+
+
+  <ng-container *ngIf="!loading">
+      <h2>SCREW YOU, LEATHER MAN! REACT CLUB TWO BLOCK BELOW!</h2>
+  </ng-container>
+  <br/>
+  <h2>Lists:</h2>
+  <br/>
+  <div class="cont">
+      <ng-container *ngIf="loading">
+          <div>
+              <div *ngFor="let c of posts">
+                  <span (click)="getPost(c)">
+                      <input type="text" [(ngModel)]="c.title" class="xdlists">
+                      <input type="text" [(ngModel)]="c.body" class="xdlists">
+                      <span style="color:red" (click)="deletePost(c)">    Delete </span>
+      <span style="color:green" (click)="updatePost(c)"> Update</span>
+      <span style="color:blue" (click)="likePost(c)"> Like</span>  
+                  </span>
+                  
+
+              </div>
+          </div>
+      </ng-container>
+  </div>
+  <br/>
+  <div>
+  </div>
+</content>
+</ng-container>

@@ -1,0 +1,62 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+header{
+    background:#405D99;  
+    height: 42px;
+    border-bottom: 1px solid #133783;
+    color: #FFFF;
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+  }
+  
+  .cont {
+    margin-top: 4px; 
+    margin-bottom: 15px;
+    font-style: italic; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: blanchedalmond;  
+    backface-visibility: visible;
+}
+  content {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    text-align: center;
+    background: #405D99;  
+    backface-visibility: visible;
+  }
+
+  .bodyall {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    text-align: center;
+    background: blueviolet;  
+    backface-visibility: visible;
+  }
+
+  #login {
+    margin-bottom: 5px;
+  }
+
+  #pw {
+    margin-bottom: 5px;
+  }
+
+  .bodyall0 {
+    padding-top: 2%;
+    padding-bottom: 1%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    text-align: center;
+    background: blueviolet;  
+    backface-visibility: visible;
+  }
+
+  .xdlists {
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
